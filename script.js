@@ -1,19 +1,19 @@
-let modal = document.getElementById("modal-content")
-let button = document.getElementById("openModal")
-let closeButton = document.querySelector(".close-modal")
-let modalClass = document.querySelector("modal")
+let modal = document.querySelector(".modal");
+    let button = document.getElementById("openModal");
+    let closeButton = document.querySelector(".close-modal");
 
-modal.style.display = "none";
+    // Open modal
+    button.onclick = () => {
+      modal.style.display = "flex";
+    };
 
-button.onclick = ()=>{
-	modal.style.display = "flex";
-	modal.style.justify
-}
-closeButton.onclick = () =>{
-	modal.style.display = "none";
-}
+    // Close modal by button
+    closeButton.onclick = () => {
+      modal.style.display = "none";
+    };
 
- window.onclick = (e) => {
+    // Close modal by clicking outside content
+    window.onclick = (e) => {
       if (e.target === modal) {
         modal.style.display = "none";
       }
