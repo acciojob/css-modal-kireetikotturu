@@ -4,7 +4,7 @@ let modal = document.querySelector(".modal");
 
     // Open modal
     button.onclick = () => {
-      modal.style.display = "flex";
+      modal.style.display = "block";
     };
 
     // Close modal by button
